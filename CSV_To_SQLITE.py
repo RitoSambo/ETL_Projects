@@ -44,5 +44,5 @@ conn = sqlite3.connect(db_file)
 df.to_sql('netflix_titles', conn, if_exists='replace', index=False)
 
 # Confirm
-print("\n✅ Data successfully loaded into SQLite database: netflix.db")
+print("Data successfully loaded into SQLite database: netflix.db")
 conn.close()
